@@ -1,5 +1,5 @@
 // Card
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap');
 
 * {
   // margin: 0;
@@ -8,23 +8,24 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   align-items: center;
   justify-content: center;
   background-color: #b9cef0;
   min-height: 100vh;
 }
 img {
-  max-width: 100%;
+  max-width: 80%;
   display: block;
+  border-radius: 50%;
 }
 .profileImg {
   // padding-left: 35px;
   // width: 25%;
   // display: block;
-  //   margin-left: auto;
+  border-radius: 50%;
   margin-right: auto;
-  width: 25%;
+  width: 20%;
   @media screen and (max-width: 600px) {
     display: block;
     margin-left: auto;
@@ -43,58 +44,11 @@ ul {
 }
 
 /* Utilities */
-.card::after,
-.card img {
-  border-radius: 50%;
-}
+
 body,
-.card,
 .stats {
   display: flex;
 }
-
-.card {
-  padding: 2.5rem 2rem;
-  border-radius: 10px;
-  // background-color: r gba(255, 255, 255, .5);
-  max-width: 1000px;
-  box-shadow: 0 0 30px #2e2e2e;
-  // box-shadow: 0 0 30px #B9CEF0;
-  margin: 1rem;
-  position: relative;
-  transform-style: preserve-3d;
-  overflow: hidden;
-}
-.card::before,
-.card::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-}
-.card::before {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #f7d4df;
-  border-radius: 10px;
-  top: -0.7rem;
-  left: -0.7rem;
-}
-.card::after {
-  height: 15rem;
-  width: 15rem;
-  background-color: #b9cef0;
-  top: -8rem;
-  right: -8rem;
-  // box-shadow: 2rem 6rem 0 -3rem #fbd2df
-  box-shadow: 0 0 30px #2e2e2e;
-}
-
-.card img {
-  // width: 8rem;
-  min-width: 80px;
-  box-shadow: 0 0 50px #9bbcf0;
-}
-
 .infos {
   margin-left: 1.5rem;
 }
@@ -123,7 +77,7 @@ body,
   // margin-bottom: 1.4rem;
 }
 .stats li {
-  min-width: 5rem;
+  min-width: 7rem;
 }
 .stats li h3 {
   font-size: 1.4rem;
@@ -133,7 +87,7 @@ body,
 }
 
 .links button {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   min-width: 120px;
   padding: 0.5rem;
   border: 1px solid #222;
@@ -165,13 +119,11 @@ body,
 }
 
 @media screen and (max-width: 450px) {
-  .card {
-    // display: block;
-    // width: 500px;
-  }
   .infos {
     margin-left: 0;
     margin-top: 1.5rem;
+    text-align: left;
+    text-justify: inter-word;
   }
   .links button {
     min-width: 100px;
@@ -183,15 +135,17 @@ body,
     display: block;
     // margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 100%;
+    border-radius: 50%;
   }
 }
 
 .AboutText {
   color: #000;
+  text-align: center;
   letter-spacing: -0.04em;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1em;
   font-family: DM Sans, sans-serif;
   font-size: 56px;
   font-weight: 400;

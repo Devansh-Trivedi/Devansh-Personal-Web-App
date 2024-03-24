@@ -3,9 +3,10 @@
 }
 #home {
   position: relative;
-  background: url("https://res.cloudinary.com/devdemo/image/upload/v1689240883/Devansh%20Website/Untitled_design_4_qi7mfz.png");
-  background-position: top;
-  background-repeat: repeat;
+  // background: url('https://res.cloudinary.com/devdemo/image/upload/v1689240883/Devansh%20Website/Untitled_design_4_qi7mfz.png');
+  background: url('https://res.cloudinary.com/devdemo/image/upload/v1711285520/Devansh%20Website/sale_1_b5sexc.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   .app__wrapper {
     padding: 0;
 
@@ -24,9 +25,8 @@
   font-size: 64px;
   font-weight: 700;
   line-height: 120%;
-  
 }
-.lottieRocket{
+.lottieRocket {
   width: 15%;
   margin: auto;
   padding-top: -30px;
@@ -55,7 +55,6 @@
   cursor: pointer;
   position: relative;
 }
-
 
 .center {
   display: flex;
@@ -110,7 +109,7 @@
 }
 .w-embed:before,
 .w-embed:after {
-  content: " ";
+  content: ' ';
   grid-area: 1/1/2/2;
   display: table;
 }
@@ -238,8 +237,8 @@
   display: grid;
 }
 
-@media screen and (max-width: 763px) and (min-width: 462px){
-  .lottieRocket{
+@media screen and (max-width: 763px) and (min-width: 462px) {
+  .lottieRocket {
     width: 30%;
     margin: auto;
     padding-top: -30px;
@@ -249,8 +248,6 @@
 }
 
 @media screen and (max-width: 971px) and (min-width: 762px) {
-  
-  
   .w-layout-grid {
     grid-row-gap: 16px;
     grid-column-gap: 16px;
@@ -267,7 +264,7 @@
 }
 
 @media screen and (max-width: 479px) {
-  .lottieRocket{
+  .lottieRocket {
     width: 25%;
     margin: auto;
     padding-top: -30px;
@@ -370,7 +367,7 @@
 }
 //Landscape
 @media only screen and (orientation: landscape) {
-  .lottieRocket{
+  .lottieRocket {
     width: 15%;
     margin: auto;
     padding-top: -30px;

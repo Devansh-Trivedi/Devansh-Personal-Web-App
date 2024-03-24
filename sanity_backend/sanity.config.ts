@@ -9,7 +9,7 @@ export default defineConfig({
 
   projectId: '5zmubs9y',
   dataset: 'production',
-
+  ignoreBrowserTokenWarning: true,
   plugins: [structureTool(), visionTool()],
 
   schema: {

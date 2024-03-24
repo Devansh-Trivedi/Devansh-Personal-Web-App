@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { Tooltip as ReactTooltip } from "react-tooltip";
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 
-import { AppWrap, MotionWrap } from "../../wrapper";
-import { urlFor, client } from "../../client";
-import "./Skills.scss";
+import { AppWrap, MotionWrap } from '../../wrapper';
+import { urlFor, client } from '../../client';
+import './Skills.scss';
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
@@ -25,95 +25,296 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="headingText">Skills & Experiences</h2>
-
       <div className="app__skills-container">
-        {/* <motion.div className="app__skills-list">
-          {skills.map((skill) => (
-            <motion.div
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5 }}
-              className="app__skills-item app__flex"
-              key={skill.name}
-            >
-              <div
-                className="app__flex"
-                style={{ backgroundColor: skill.bgColor }}
-              >
-                <img src={urlFor(skill.icon)} alt={skill.name} />
-              </div>
-              <p className="p-text">{skill.name}</p>
-            </motion.div>
-          ))}
-        </motion.div> */}
+        <h2 className="headingText">Skills & Experiences</h2>
         <div className="app__skills-exp">
-          {experiences
-            .slice(0)
-            .reverse()
-            .map((experience) => (
-              <motion.div
-                className="app__skills-exp-item card"
-                key={experience.year}
-              >
-                <div className="app__skills-exp-year">
-                  <p className="bold-text">{experience.year}</p>
-                </div>
-                <motion.div
-                  className="app__skills-exp-works"
-                  key={experience.role}
-                >
-                  <div className="mobile-view-date">
-                    <p>{experience.year}</p>
-                  </div>
-                  <motion.div
-                    whileInView={{ opacity: [0, 1] }}
-                    transition={{ duration: 0.5 }}
-                    className="app__skills-exp-work"
-                    data-tip
-                    data-for={experience.role}
-                    key={experience.role}
-                  >
-                    <h4 className="bold-text">
-                      <span style={{fontWeight: "bold"}}>{experience.role} </span>
-                       {/* - Internship Certificate:{" "} */}
-                      {/* <span>
-                        <a
-                          href={experience.link}
-                          target="_blank"
-                          className="link-text"
-                          style={{ textDecoration: "underline" }}
-                          rel="noreferrer"
-                        >
-                          [ Link ]
-                        </a>
-                      </span> */}
-                    </h4>
+          <main class="CV-page">
+            <div class="CV-grid">
+              <div class="CV-grid-column">
+                <div class="CV-jobs">
+                  <section class="CV-timeline CV-job">
+                    <h3 class="CV-timeline-heading">
+                      <span class="CV-timeline-heading-title">
+                        Software Engineer{' '}
+                      </span>
+                      &#8211;{' '}
+                      <span class="CV-timeline-heading-location">ENGIE </span>
+                      <small class="CV-timeline-heading-duration">
+                        Jul 2023 - Present
+                      </small>
+                    </h3>
 
-                    <p>
-                      <a
-                        href="https://google.co.in/"
-                        target="_blank"
-                        className="company_name"
-                        rel="noreferrer"
-                      >
-                        {experience.company}
-                      </a>
-                    </p>
-                  </motion.div>
-                  {experience.works.map((work) => (
                     <>
                       <div className="expList">
                         {/* <ul> */}
-                          <ul className="workDescription" key={work.desc}>
-                            {work.desc}
-                          </ul>
-                        {/* </ul> */}
+                        <ul class="CV-timeline-details">
+                          <li class="CV-job-timeline-item">
+                            Contributing to the Enterprise Integration vertical
+                            for ENGIE, a prominent French multinational utility
+                            company.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Orchestrated the construction and supervision of
+                            data aggregation workflows within the Talend
+                            platform, optimizing the consolidation of data from
+                            diverse sources into a unified, versatile database
+                            system.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Collaborating cross-functionally to understand
+                            business needs, providing data-driven solutions that
+                            align with ENGIE's objectives.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            {' '}
+                            Implemented design patterns such as MVC to enhance
+                            performance and enhance code readability, with a
+                            focus on deploying applications through AWS EC2 and
+                            S3 services.
+                          </li>
+                        </ul>
                       </div>
                     </>
-                  ))}
-                </motion.div>
-              </motion.div>
-            ))}
+                  </section>
+                  <section class="CV-timeline CV-job">
+                    <h3 class="CV-timeline-heading">
+                      <span class="CV-timeline-heading-title">
+                        Software Engineer{' '}
+                      </span>
+                      &#8211;{' '}
+                      <span class="CV-timeline-heading-location">
+                        TCS (Digital){' '}
+                      </span>
+                      <small class="CV-timeline-heading-duration">
+                        Jul 2023 - Present
+                      </small>
+                    </h3>
+
+                    <>
+                      <div className="expList">
+                        {/* <ul> */}
+                        <ul class="CV-timeline-details">
+                          <li class="CV-job-timeline-item">
+                            Pioneering data engineering solutions at TCS,
+                            driving innovation in the seamless integration of
+                            diverse data sources for optimal processing and
+                            analysis.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Instrumental in developing scalable and
+                            high-performance data architectures, enhancing the
+                            client organization's ability to extract meaningful
+                            insights from large datasets.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Directing the development and oversight of data
+                            aggregation processes on the Talend platform,
+                            streamlining the merging of data from various
+                            origins into a cohesive and adaptable database
+                            system.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            {' '}
+                            Spearheading the design and implementation of robust
+                            data pipelines, leveraging cutting-edge technologies
+                            to ensure efficient data flow and storage.
+                          </li>
+                        </ul>
+                      </div>
+                    </>
+                  </section>
+                  <section class="CV-timeline CV-job">
+                    <h3 class="CV-timeline-heading">
+                      <span class="CV-timeline-heading-title">
+                        Software Engineer Intern - Backend{' '}
+                      </span>
+                      &#8211;{' '}
+                      <span class="CV-timeline-heading-location">Voosh </span>
+                      <small class="CV-timeline-heading-duration">
+                        Oct 2022 - Mar 2023
+                      </small>
+                    </h3>
+
+                    <>
+                      <div className="expList">
+                        {/* <ul> */}
+                        <ul class="CV-timeline-details">
+                          <li class="CV-job-timeline-item">
+                            Worked on US product at Voosh. I had build endpoints
+                            using Rest API, and used AWS Redshift as data
+                            warehouse service for data operations.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Automated the server side resources using AWS Lambda
+                            and increased its efficiency using Elastic Search.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Used MVC Design pattern, and developed automation
+                            solutions leveraging shell and Perl to increase the
+                            efficiency.
+                          </li>
+                        </ul>
+                      </div>
+                    </>
+                  </section>
+                  <section class="CV-timeline CV-job">
+                    <h3 class="CV-timeline-heading">
+                      <span class="CV-timeline-heading-title">
+                        Product Intern{' '}
+                      </span>
+                      &#8211;{' '}
+                      <span class="CV-timeline-heading-location">Cuvette</span>
+                      <small class="CV-timeline-heading-duration">
+                        Mar 2022 - Nov 2022
+                      </small>
+                    </h3>
+
+                    <>
+                      <div className="expList">
+                        {/* <ul> */}
+                        <ul class="CV-timeline-details">
+                          <li class="CV-job-timeline-item">
+                            Designed and organised a full-fledge, Product
+                            building bootcamp for users at Cuvette where I
+                            provided mentorship to 500+ students for developing
+                            a MERN stack web application.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Run programs to increase the reach of the platform
+                            and co-ordinated with tech team for resolving user
+                            related issues.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Worked along with Founders and participated in
+                            Product building discussions and looked after the
+                            Operations single handedly.
+                          </li>
+                        </ul>
+                      </div>
+                    </>
+                  </section>
+                  <section class="CV-timeline CV-job">
+                    <h3 class="CV-timeline-heading">
+                      <span class="CV-timeline-heading-title">
+                        Product Intern{' '}
+                      </span>
+                      &#8211;{' '}
+                      <span class="CV-timeline-heading-location">
+                        Newton School
+                      </span>
+                      <small class="CV-timeline-heading-duration">
+                        Oct 2021 - Mar 2022
+                      </small>
+                    </h3>
+
+                    <>
+                      <div className="expList">
+                        {/* <ul> */}
+                        <ul class="CV-timeline-details">
+                          <li class="CV-job-timeline-item">
+                            Worked closely with operations team to ensure
+                            smoothing working and functioning of web
+                            application.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Participate in the planning, development and
+                            execution of user training and communication for all
+                            customer facing technology releases/ changes.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Executed Quality Checks (QC’s) for the instructors
+                            and provided support for weekly and monthly
+                            management reporting across Controls, Business
+                            Resiliency, and Business Management.
+                          </li>
+                        </ul>
+                      </div>
+                    </>
+                  </section>
+                  <section class="CV-timeline CV-job">
+                    <h3 class="CV-timeline-heading">
+                      <span class="CV-timeline-heading-title">
+                        Software Engineer Intern ( backend & Cloud ){' '}
+                      </span>
+                      &#8211;{' '}
+                      <span class="CV-timeline-heading-location">
+                        Mapreks Systems
+                      </span>
+                      <small class="CV-timeline-heading-duration">
+                        Sept 2021 - Nov 2021
+                      </small>
+                    </h3>
+
+                    <>
+                      <div className="expList">
+                        {/* <ul> */}
+                        <ul class="CV-timeline-details">
+                          <li class="CV-job-timeline-item">
+                            Worked on ANPR system, and developed a model and
+                            achieved 92% accuracy.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Trained YOLO v5 on the custom dataset. Tested the
+                            output with existing license plate data.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Implemented Research Paper, Used OpenCV and
+                            Candidate Analysis to detect the location of core
+                            and delta of Car License plate, used modular
+                            Architecture for training the model and to improve
+                            the accuracy.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Worked on Linode as a Cloud platform to store and
+                            deploy the model in production.
+                          </li>
+                        </ul>
+                      </div>
+                    </>
+                  </section>
+                  <section class="CV-timeline CV-job">
+                    <h3 class="CV-timeline-heading">
+                      <span class="CV-timeline-heading-title">
+                        Software Engineer Intern{' '}
+                      </span>
+                      &#8211;{' '}
+                      <span class="CV-timeline-heading-location">
+                        The Machine Learning Company
+                      </span>
+                      <small class="CV-timeline-heading-duration">
+                        Jan 2021 - Jun 2021
+                      </small>
+                    </h3>
+
+                    <>
+                      <div className="expList">
+                        {/* <ul> */}
+                        <ul class="CV-timeline-details">
+                          <li class="CV-job-timeline-item">
+                            Developed backend for the applications using NodeJS
+                            and Express.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Built endpoints using Rest API, tested in Postman
+                            and used MongoDB database in backend.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Perform debug and performance analysis of code and
+                            systems.
+                          </li>
+                          <li class="CV-job-timeline-item">
+                            Assist in defining, automating, and executing
+                            development tests in support of the
+                            feature/functionality being developed.
+                          </li>
+                        </ul>
+                      </div>
+                    </>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </main>
         </div>
       </div>
     </>
@@ -121,7 +322,7 @@ const Skills = () => {
 };
 
 export default AppWrap(
-  MotionWrap(Skills, "app__skills"),
-  "skills",
-  "skills__background"
+  MotionWrap(Skills, 'app__skills'),
+  'skills',
+  'skills__background'
 );

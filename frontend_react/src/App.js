@@ -5,7 +5,7 @@ import { Navbar } from './components';
 import './App.scss';
 
 const App = () => (
-  <div className="app" style={{background: 'url("https://res.cloudinary.com/devdemo/image/upload/v1688156420/Untitled_design_tcc9it.png")'}}>
+  <div className="app">
     <Navbar />
     <Header />
     <About />

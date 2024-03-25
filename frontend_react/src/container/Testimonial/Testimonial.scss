@@ -1,14 +1,15 @@
 // #testimonial-card {
 //   width: 100%;
 // }
-.image_card {
+.testimonial_image_card {
   margin-bottom: 10px;
 }
 
-.img_box {
+.testimonial_img_box {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   padding-bottom: 0px;
   border-radius: 0%;
+  width: 100%;
 }
 
 .Recomm-Text {
@@ -17,10 +18,35 @@
   margin-top: 0;
   margin-bottom: 0;
   font-family: DM Sans, sans-serif;
-  font-size: 45px;
+  font-size: 48px;
   font-weight: 400;
   text-align: center;
   line-height: 120%;
   // justify-content: center;
   padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.recognitionImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 479px) {
+  .Recomm-Text {
+    font-size: 36px;
+    padding-top: 20px;
+  }
+  #image_card_test {
+    margin: auto;
+    width: 100%;
+  }
+  .recognitionImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 }

@@ -76,7 +76,7 @@
 .header-review-avatar {
   width: 48px;
   height: 48px;
-  border: 4px solid #fff;
+  // border: 4px solid #fff;
   border-radius: 99px;
   flex: none;
   margin-left: -12px;
@@ -420,4 +420,18 @@ svg #wheel {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+#underline {
+  background-image: linear-gradient(
+    179deg,
+    rgb(246, 56, 129) 0%,
+    rgb(254, 97, 158) 50%,
+    transparent 54%,
+    transparent 100%
+  );
+  background-size: 100% 15%;
+  background-repeat: repeat-x;
+  background-position: left 0% bottom 16%;
+  margin-bottom: 3.5rem;
 }

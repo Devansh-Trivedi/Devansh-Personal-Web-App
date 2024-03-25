@@ -21,7 +21,9 @@ const About = () => {
 
   return (
     <div className="About">
-      <h2 className="AboutText">About Me</h2>
+      <h2 className="AboutText">
+        <span>About Me</span>
+      </h2>
 
       <Container>
         <Row>
@@ -41,14 +43,16 @@ const About = () => {
             </div> */}
               <p className="text">
                 I'm BTech Computer Science graduate with keen interest in
-                Machine Learning and Product Development. I believe in
-                leveraging technology by solving real world problems. I noticed
-                that my work held the potential to spread positivity and impact
-                other peoples’ lives in a thought-provoking manner.
+                Machine Learning and Product Development. In my professional
+                pursuits, I am deeply committed to harnessing technology to
+                address real-world challenges. My enthusiasm lies in exploring
+                human-centered design principles and user-centric methodologies,
+                as I derive great satisfaction from crafting products that
+                reduces human efforts.
               </p>
               <ul className="stats">
                 <li>
-                  <h3>850K</h3>
+                  <h3>1M+</h3>
                   <h4>
                     LinkedIn<br></br>Impressions
                   </h4>

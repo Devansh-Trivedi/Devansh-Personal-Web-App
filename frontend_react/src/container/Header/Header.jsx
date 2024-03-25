@@ -21,19 +21,22 @@ const scaleVariants = {
 
 const Header = () => (
   <div className="HeaderClass">
-    <div className="headerText headerTextTop">Hey, I'm Devansh Trivedi</div>
+    <div className="headerText headerTextTop">
+      Hey, I'm <span id="underline">Devansh Trivedi</span>
+    </div>
 
     <div className="headerText">Let's connect</div>
     <div className="tagline">
-      I'm a Software Engineer who builds accessible, inclusive products and
-      digital experiences for the people.
+      I'm a <span style={{ fontWeight: 'bold' }}>Software Engineer</span> who
+      builds accessible, inclusive products and digital experiences for the
+      people.
     </div>
     <br />
     <Lottie className="lottieRocket" animationData={Rocket} />
 
     <div className="center">
       <a href="#footerHead" className="button-primary">
-        I'm just a Email away
+        I'm just an Email away
       </a>
     </div>
     {/* //ratings */}
@@ -65,7 +68,7 @@ const Header = () => (
             />
           </div>
         </div>
-        <div className="header-review-block">
+        {/* <div className="header-review-block">
           <div className="header-review-star">
             <div className="icon-regular-3 w-embed">
               <svg
@@ -86,7 +89,7 @@ const Header = () => (
             <div className="paragraph-large-5 text-weight-bold">4.2/5</div>
             <div className="paragraph-small-7 text-color-gray-600">Ratings</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
 

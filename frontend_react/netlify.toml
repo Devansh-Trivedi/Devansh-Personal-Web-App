@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "https://5zmubs9y.apicdn.sanity.io/*"
+  to = "https://gorgeous-youtiao-c39dec.netlify.app"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+

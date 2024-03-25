@@ -28,18 +28,20 @@ const Skills = () => {
       <div className="app__skills-container">
         <h2 className="headingText">Skills & Experiences</h2>
         <div className="app__skills-exp">
-          <main class="CV-page">
-            <div class="CV-grid">
-              <div class="CV-grid-column">
-                <div class="CV-jobs">
-                  <section class="CV-timeline CV-job">
-                    <h3 class="CV-timeline-heading">
-                      <span class="CV-timeline-heading-title">
+          <main className="CV-page">
+            <div className="CV-grid">
+              <div className="CV-grid-column">
+                <div className="CV-jobs">
+                  <section className="CV-timeline CV-job">
+                    <h3 className="CV-timeline-heading">
+                      <span className="CV-timeline-heading-title">
                         Software Engineer{' '}
                       </span>
                       &#8211;{' '}
-                      <span class="CV-timeline-heading-location">ENGIE </span>
-                      <small class="CV-timeline-heading-duration">
+                      <span className="CV-timeline-heading-location">
+                        ENGIE{' '}
+                      </span>
+                      <small className="CV-timeline-heading-duration">
                         Jul 2023 - Present
                       </small>
                     </h3>
@@ -47,25 +49,25 @@ const Skills = () => {
                     <>
                       <div className="expList">
                         {/* <ul> */}
-                        <ul class="CV-timeline-details">
-                          <li class="CV-job-timeline-item">
+                        <ul className="CV-timeline-details">
+                          <li className="CV-job-timeline-item">
                             Contributing to the Enterprise Integration vertical
                             for ENGIE, a prominent French multinational utility
                             company.
                           </li>
-                          <li class="CV-job-timeline-item">
+                          <li className="CV-job-timeline-item">
                             Orchestrated the construction and supervision of
                             data aggregation workflows within the Talend
                             platform, optimizing the consolidation of data from
                             diverse sources into a unified, versatile database
                             system.
                           </li>
-                          {/* <li class="CV-job-timeline-item">
+                          {/* <li className="CV-job-timeline-item">
                             Collaborating cross-functionally to understand
                             business needs, providing data-driven solutions that
                             align with ENGIE's objectives.
                           </li>
-                          <li class="CV-job-timeline-item">
+                          <li className="CV-job-timeline-item">
                             {' '}
                             Implemented design patterns such as MVC to enhance
                             performance and enhance code readability, with a
@@ -76,16 +78,16 @@ const Skills = () => {
                       </div>
                     </>
                   </section>
-                  <section class="CV-timeline CV-job">
-                    <h3 class="CV-timeline-heading">
-                      <span class="CV-timeline-heading-title">
+                  <section className="CV-timeline CV-job">
+                    <h3 className="CV-timeline-heading">
+                      <span className="CV-timeline-heading-title">
                         Software Engineer{' '}
                       </span>
                       &#8211;{' '}
-                      <span class="CV-timeline-heading-location">
+                      <span className="CV-timeline-heading-location">
                         TCS (Digital){' '}
                       </span>
-                      <small class="CV-timeline-heading-duration">
+                      <small className="CV-timeline-heading-duration">
                         Jul 2023 - Present
                       </small>
                     </h3>
@@ -93,27 +95,27 @@ const Skills = () => {
                     <>
                       <div className="expList">
                         {/* <ul> */}
-                        <ul class="CV-timeline-details">
-                          <li class="CV-job-timeline-item">
+                        <ul className="CV-timeline-details">
+                          <li className="CV-job-timeline-item">
                             Pioneering data engineering solutions at TCS,
                             driving innovation in the seamless integration of
                             diverse data sources for optimal processing and
                             analysis.
                           </li>
-                          {/* <li class="CV-job-timeline-item">
+                          {/* <li className="CV-job-timeline-item">
                             Instrumental in developing scalable and
                             high-performance data architectures, enhancing the
                             client organization's ability to extract meaningful
                             insights from large datasets.
                           </li> */}
-                          <li class="CV-job-timeline-item">
+                          <li className="CV-job-timeline-item">
                             Directing the development and oversight of data
                             aggregation processes on the Talend platform,
                             streamlining the merging of data from various
                             origins into a cohesive and adaptable database
                             system.
                           </li>
-                          {/* <li class="CV-job-timeline-item">
+                          {/* <li className="CV-job-timeline-item">
                             {' '}
                             Spearheading the design and implementation of robust
                             data pipelines, leveraging cutting-edge technologies
@@ -123,16 +125,16 @@ const Skills = () => {
                       </div>
                     </>
                   </section>
-                  <section class="CV-timeline CV-job">
-                    <h3 class="CV-timeline-heading">
-                      <span class="CV-timeline-heading-title">
+                  <section className="CV-timeline CV-job">
+                    <h3 className="CV-timeline-heading">
+                      <span className="CV-timeline-heading-title">
                         Software Engineer Intern (Backend){' '}
                       </span>
                       &#8211;{' '}
-                      <span class="CV-timeline-heading-location">
+                      <span className="CV-timeline-heading-location">
                         Voosh (YCombinator'21){' '}
                       </span>
-                      <small class="CV-timeline-heading-duration">
+                      <small className="CV-timeline-heading-duration">
                         Oct 2022 - Mar 2023
                       </small>
                     </h3>
@@ -140,16 +142,16 @@ const Skills = () => {
                     <>
                       <div className="expList">
                         {/* <ul> */}
-                        <ul class="CV-timeline-details">
-                          <li class="CV-job-timeline-item">
+                        <ul className="CV-timeline-details">
+                          <li className="CV-job-timeline-item">
                             Contributed in the developemnt of their US product
                             at Voosh, a San Francisco based YCombinator startup.
                           </li>
-                          {/* <li class="CV-job-timeline-item">
+                          {/* <li className="CV-job-timeline-item">
                             Automated the server side resources using AWS Lambda
                             and increased its efficiency using Elastic Search.
                           </li>
-                          <li class="CV-job-timeline-item">
+                          <li className="CV-job-timeline-item">
                             Used MVC Design pattern, and developed automation
                             solutions leveraging shell and Perl to increase the
                             efficiency.
@@ -158,14 +160,16 @@ const Skills = () => {
                       </div>
                     </>
                   </section>
-                  <section class="CV-timeline CV-job">
-                    <h3 class="CV-timeline-heading">
-                      <span class="CV-timeline-heading-title">
+                  <section className="CV-timeline CV-job">
+                    <h3 className="CV-timeline-heading">
+                      <span className="CV-timeline-heading-title">
                         Product Intern{' '}
                       </span>
                       &#8211;{' '}
-                      <span class="CV-timeline-heading-location">Cuvette</span>
-                      <small class="CV-timeline-heading-duration">
+                      <span className="CV-timeline-heading-location">
+                        Cuvette
+                      </span>
+                      <small className="CV-timeline-heading-duration">
                         Mar 2022 - Nov 2022
                       </small>
                     </h3>
@@ -173,19 +177,19 @@ const Skills = () => {
                     <>
                       <div className="expList">
                         {/* <ul> */}
-                        <ul class="CV-timeline-details">
-                          <li class="CV-job-timeline-item">
+                        <ul className="CV-timeline-details">
+                          <li className="CV-job-timeline-item">
                             Designed and organised a full-fledge, Product
                             building bootcamp for users at Cuvette where I
                             provided mentorship to 500+ students for developing
                             a MERN stack web application.
                           </li>
-                          <li class="CV-job-timeline-item">
+                          <li className="CV-job-timeline-item">
                             Run programs to increase the reach of the platform
                             and co-ordinated with tech team for resolving user
                             related issues.
                           </li>
-                          {/* <li class="CV-job-timeline-item">
+                          {/* <li className="CV-job-timeline-item">
                             Worked along with Founders and participated in
                             Product building discussions and looked after the
                             Operations single handedly.
@@ -194,16 +198,16 @@ const Skills = () => {
                       </div>
                     </>
                   </section>
-                  <section class="CV-timeline CV-job">
-                    <h3 class="CV-timeline-heading">
-                      <span class="CV-timeline-heading-title">
+                  <section className="CV-timeline CV-job">
+                    <h3 className="CV-timeline-heading">
+                      <span className="CV-timeline-heading-title">
                         Product Intern{' '}
                       </span>
                       &#8211;{' '}
-                      <span class="CV-timeline-heading-location">
+                      <span className="CV-timeline-heading-location">
                         Newton School
                       </span>
-                      <small class="CV-timeline-heading-duration">
+                      <small className="CV-timeline-heading-duration">
                         Oct 2021 - Mar 2022
                       </small>
                     </h3>
@@ -211,18 +215,18 @@ const Skills = () => {
                     <>
                       <div className="expList">
                         {/* <ul> */}
-                        <ul class="CV-timeline-details">
-                          <li class="CV-job-timeline-item">
+                        <ul className="CV-timeline-details">
+                          <li className="CV-job-timeline-item">
                             Worked closely with operations team to ensure
                             smoothing working and functioning of web
                             application.
                           </li>
-                          <li class="CV-job-timeline-item">
+                          <li className="CV-job-timeline-item">
                             Participate in the planning, development and
                             execution of user training and communication for all
                             customer facing technology releases/ changes.
                           </li>
-                          {/* <li class="CV-job-timeline-item">
+                          {/* <li className="CV-job-timeline-item">
                             Executed Quality Checks (QC’s) for the instructors
                             and provided support for weekly and monthly
                             management reporting across Controls, Business
@@ -232,16 +236,16 @@ const Skills = () => {
                       </div>
                     </>
                   </section>
-                  <section class="CV-timeline CV-job">
-                    <h3 class="CV-timeline-heading">
-                      <span class="CV-timeline-heading-title">
+                  <section className="CV-timeline CV-job">
+                    <h3 className="CV-timeline-heading">
+                      <span className="CV-timeline-heading-title">
                         Software Engineer Intern (Backend & Cloud){' '}
                       </span>
                       &#8211;{' '}
-                      <span class="CV-timeline-heading-location">
+                      <span className="CV-timeline-heading-location">
                         Mapreks Systems
                       </span>
-                      <small class="CV-timeline-heading-duration">
+                      <small className="CV-timeline-heading-duration">
                         Sept 2021 - Nov 2021
                       </small>
                     </h3>
@@ -249,23 +253,23 @@ const Skills = () => {
                     <>
                       <div className="expList">
                         {/* <ul> */}
-                        <ul class="CV-timeline-details">
-                          <li class="CV-job-timeline-item">
+                        <ul className="CV-timeline-details">
+                          <li className="CV-job-timeline-item">
                             Worked on ANPR system, and developed a model and
                             achieved 92% accuracy.
                           </li>
-                          <li class="CV-job-timeline-item">
+                          <li className="CV-job-timeline-item">
                             Trained YOLO v5 on the custom dataset. Tested the
                             output with existing license plate data.
                           </li>
-                          <li class="CV-job-timeline-item">
+                          <li className="CV-job-timeline-item">
                             Implemented Research Paper, Used OpenCV and
                             Candidate Analysis to detect the location of core
                             and delta of Car License plate, used modular
                             Architecture for training the model and to improve
                             the accuracy.
                           </li>
-                          {/* <li class="CV-job-timeline-item">
+                          {/* <li className="CV-job-timeline-item">
                             Worked on Linode as a Cloud platform to store and
                             deploy the model in production.
                           </li> */}
@@ -273,16 +277,16 @@ const Skills = () => {
                       </div>
                     </>
                   </section>
-                  <section class="CV-timeline CV-job">
-                    <h3 class="CV-timeline-heading">
-                      <span class="CV-timeline-heading-title">
+                  <section className="CV-timeline CV-job">
+                    <h3 className="CV-timeline-heading">
+                      <span className="CV-timeline-heading-title">
                         Software Engineer Intern{' '}
                       </span>
                       &#8211;{' '}
-                      <span class="CV-timeline-heading-location">
+                      <span className="CV-timeline-heading-location">
                         The Machine Learning Company
                       </span>
-                      <small class="CV-timeline-heading-duration">
+                      <small className="CV-timeline-heading-duration">
                         Jan 2021 - Jun 2021
                       </small>
                     </h3>
@@ -290,20 +294,20 @@ const Skills = () => {
                     <>
                       <div className="expList">
                         {/* <ul> */}
-                        <ul class="CV-timeline-details">
-                          <li class="CV-job-timeline-item">
+                        <ul className="CV-timeline-details">
+                          <li className="CV-job-timeline-item">
                             Developed backend for the applications using NodeJS
                             and Express.
                           </li>
-                          <li class="CV-job-timeline-item">
+                          <li className="CV-job-timeline-item">
                             Built endpoints using Rest API, tested in Postman
                             and used MongoDB database in backend.
                           </li>
-                          <li class="CV-job-timeline-item">
+                          <li className="CV-job-timeline-item">
                             Perform debug and performance analysis of code and
                             systems.
                           </li>
-                          {/* <li class="CV-job-timeline-item">
+                          {/* <li className="CV-job-timeline-item">
                             Assist in defining, automating, and executing
                             development tests in support of the
                             feature/functionality being developed.
